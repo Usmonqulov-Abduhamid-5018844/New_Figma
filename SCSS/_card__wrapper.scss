@@ -91,9 +91,10 @@
     .brand__wrapper__items{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
         background-color: #F6F6F6;
+        align-items: center;
+        justify-content: center;
         border-radius: 30px;
         gap: 20px;
         .brand__desc{
@@ -108,5 +109,16 @@
                 font-size: 14px;
               }
         }
+        .brand__image{
+          width: 200px;
+          margin-right: 100px;
+        }
     }
+}
+@media (max-width: 530px){
+  .brand__wrapper__items{
+    .brand__desc{
+      align-items: center;
+    }
+  }
 }

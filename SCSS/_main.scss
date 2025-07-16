@@ -93,12 +93,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 
     .brand__desc{
 
       h1 {
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 10px;
         line-height: 1.2;
         font-weight: 800;
@@ -122,9 +122,29 @@
   
   .hero {
     width: 100%;
-    height: 140vh;
+    height: 100vh;
   }
   .brand__image {
     width: 100%;
+  }
+}
+
+@media (max-width: 520px){
+  .brand__wrapper{
+    gap: 10px;
+    .brand__desc{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      h1{
+        font-size: 25px;
+        line-height: 1.2;
+      }
+      p{
+        font-size: 16px;
+      }
+
+    }
   }
 }

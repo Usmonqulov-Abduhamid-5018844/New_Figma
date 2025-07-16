@@ -5,8 +5,6 @@
     width: 100%;
     margin-top: 20px;
     display: flex;
-    // padding-left: 16px;
-    // padding-right: 16px;
     justify-content: space-between;
     align-items: center;
     &__logo {
@@ -30,6 +28,12 @@
       color: white;
       display: flex;
       gap: 20px;
+      .burger {
+        display: none;
+        i {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -39,10 +43,21 @@
     padding: 20px;
   }
 }
-@media (max-width: 700px){
-    .navbar{
-        &__collaction {
-            display: none;
-          }
+
+@media (max-width: 700px) {
+  .navbar {
+    &__collaction {
+      a {
+        display: none;
+      }
     }
+    &__icon {
+      .burger {
+        display: block !important;
+        i {
+          display: block !important;
+        }
+      }
+    }
+  }
 }
