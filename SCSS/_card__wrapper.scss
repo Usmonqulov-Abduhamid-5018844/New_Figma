@@ -72,11 +72,11 @@
     }
   
     .brand__image {
-      width: 276px;
+      width: 240px;
   
       img {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        // height: 100%;
         object-fit: cover;
       }
     }
@@ -85,7 +85,10 @@
 @media (max-width: 800px){
     .brand__wrapper__items{
         padding: 30px;
+        .brand__image{
+          width: 150px;
     }
+}
 }
 @media (max-width: 700px){
     .brand__wrapper__items{
@@ -110,7 +113,7 @@
               }
         }
         .brand__image{
-          width: 200px;
+          width: 130px;
           margin-right: 100px;
         }
     }
