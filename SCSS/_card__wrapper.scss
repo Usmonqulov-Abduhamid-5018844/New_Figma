@@ -1,0 +1,112 @@
+.clineds{
+    margin-top: 80px;
+}
+.brand__wrapper__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F6F6F6;
+    border-radius: 30px;
+  
+    .brand__desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px; 
+      width: 500px;
+      // background-color: red;
+      .brand__input {
+        position: relative;
+        background-color: white;
+        width: 420px;
+        height: 50px;
+        border-radius: 14px;
+        i {
+          color: black;
+          width: 250px;
+          position: absolute;
+          bottom: 19px;
+          left: 13px;
+        }
+        input {
+          width: 300px;
+          outline: none;
+          margin-top: 4px;
+          margin-left: 35px;
+          border: none;
+          height: 40px;
+          border-radius: 12px;
+          padding: 10px;
+          font-size: 18px;
+        }
+      }
+      h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        font-weight: 800;
+        color: black;
+      }
+  
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: rgba(0, 0, 0, 0.508);
+      }
+      button {
+        position: absolute;
+        border-radius: 10px;
+        top: 6px;
+        border: none;
+        width: 90px;
+        padding: 10px;
+        left: 320px;
+        background-color: #4b5ace;
+        color: white;
+        font-size: 16px;
+        transition: 0.5;
+        &:hover {
+          background-color: rgb(6, 191, 18);
+        }
+      }
+    }
+  
+    .brand__image {
+      width: 276px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+@media (max-width: 800px){
+    .brand__wrapper__items{
+        padding: 30px;
+    }
+}
+@media (max-width: 700px){
+    .brand__wrapper__items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #F6F6F6;
+        border-radius: 30px;
+        gap: 20px;
+        .brand__desc{
+            h2 {
+                font-size: 20px;
+                // margin-bottom: 8px;
+                line-height: 1.2;
+                font-weight: 800;
+                color: black;
+              }
+              p{
+                font-size: 14px;
+              }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.brand {
+  margin-top: 100px;
+}
+
+.brand__wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: rgb(82, 216, 216);
+
+  .brand__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    width: 500px;
+    // background-color: red;
+    .brand__input {
+      position: relative;
+      background-color: white;
+      width: 420px;
+      height: 50px;
+      border-radius: 14px;
+      i {
+        color: black;
+        width: 250px;
+        position: absolute;
+        bottom: 19px;
+        left: 13px;
+      }
+      input {
+        width: 300px;
+        outline: none;
+        margin-top: 4px;
+        margin-left: 35px;
+        border: none;
+        height: 40px;
+        border-radius: 12px;
+        padding: 10px;
+        font-size: 18px;
+      }
+    }
+    h1 {
+      font-size: 64px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+      font-weight: 800;
+      color: white;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: white;
+    }
+    button {
+      position: absolute;
+      border-radius: 10px;
+      top: 6px;
+      border: none;
+      width: 85px;
+      padding: 8px;
+      left: 326px;
+      background-color: #4b5ace;
+      color: white;
+      font-size: 16px;
+      transition: 0.5;
+      &:hover {
+        background-color: rgb(6, 191, 18);
+      }
+    }
+  }
+
+  .brand__image {
+    width: 440px;
+    height: 430px;
+
+    img {
+      width: 330px;
+      object-fit: cover;
+    }
+  }
+}
+@media(max-width: 1100px){
+  .brand__wrapper{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .brand__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    .brand__desc{
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        font-weight: 800;
+        color: white;
+      }
+    }
+  }
+  .brand {
+    margin-top: 40px;
+  }
+  .brand__image {
+    width: 300px;
+    // background-color: #4b5ace;
+
+    img {
+      width: 60%;
+      // height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .hero {
+    width: 100%;
+    height: 140vh;
+  }
+  .brand__image {
+    width: 100%;
+  }
+}
